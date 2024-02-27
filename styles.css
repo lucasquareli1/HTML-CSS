@@ -1,0 +1,416 @@
+/*LIMITAÇOES DO SITE GERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.didact-gothic-regular {
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* CORES DO SITE*/
+body {
+    background-color: #252525;
+    height: 100vh;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+.btn-Contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* LARGURA E DIMENSAO DO SITE */
+.interface {
+    max-width: 1820px;
+    margin: 0 auto;
+}
+
+
+h2.titulo {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+.MODELOS .MODELOS-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px white;
+}
+.MODELOS-box i{
+        background-color: white;
+        border-radius: 50%;
+        padding: 8px;
+        font-size: 10px;
+}
+
+/* ESTILO DO CABEÇALHO INTERFACE= CLASSE MAE */
+header {
+
+    padding: 20px 4%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: grey;
+    opacity: .8;
+    z-index: 1000;
+    background-position: center;
+    background-size: cover;
+
+}
+
+header {
+    width: 100%;
+    background-color: grey;
+    opacity: .8;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    position: fixed absolute;
+
+
+}
+
+
+header a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+header a:hover {
+    color: black;
+    transform: scale(1.20);
+    transition: .2s;
+}
+
+
+header nav ul {
+    list-style-type: none;
+}
+
+
+header nav li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/*essa virgula serve para utilizar as mesmas informaçoes em diferentes botoes*/
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 3px white;
+    transform: scale(1.20);
+    transition: 1.0s;
+}
+
+
+/*TOPO DO SITE CONFIG*/
+
+section .topo-do-site {
+    padding: 200px 4% 0;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+section.topo-do-site video {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    padding-top: 20px;
+}
+
+
+.topo-do-site video {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+
+/* ESTILO DOS MODELOS*/
+section.MODELOS {
+    padding: 40px 4%;
+    color: white;
+}
+
+
+.MODELOS .MODELOS-box {
+    padding: 40px;
+    color: white;
+    margin-top: 50px;
+    border-radius: 30px;
+    transition: 1.2s;
+}
+
+
+section.MODELOS .flex {
+    display: flex;
+    gap: 100px;
+}
+
+
+.MODELOS .MODELOS-box i {
+    font-size: 70px;
+    color: black;
+}
+
+
+.MODELOS .MODELOS-box h3 {
+    font-size: 25px;
+    margin: 80px 0px;
+}
+
+
+/* SOBRE*/
+section .sobre {
+    padding: 50px 5%;
+}
+
+
+.sobre .txt-sobre {
+    color: white;
+}
+
+
+.sobre .img-sobre {
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.sobre .img-sobre img {
+    border-radius: 10px;
+}
+
+section.sobre .btn-rede-social i {
+    color: white;
+    font-size: 22px;
+    margin-top: 10px;
+
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+
+.sobre .txt-sobre p {
+    margin-bottom: 10px 0;
+    text-align: justify;
+}
+
+
+
+
+/* CENTRALIZACAO E ROLAGEM DA IMAGEM PORSCHE------- ---------------------------------------------------------------------------------------*/
+section.portfolio {
+    padding: 100px 4%;
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    transition: 4s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* VOCE PODE CRIAR UMA SESSAO GLOBAL E UTILIZAR ESSA MARGEM E PADDING NO SITE TODO*/
+section.formulario {
+    padding: 90px 4%;
+
+}
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.39);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: black;
+    font-size: 20px;
+}
+
+
+form input::placeholder {
+    color: rgba(0, 0, 0, 0.445);
+}
+
+
+form .btn-enviar {
+    margin-top: 10px;
+}
+
+
+form .btn-enviar input {
+    width: 160px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+    margin: 0 auto;
+    display: block;
+    transition: 1.2s;
+}
+
+
+/* ESTILO DO RODAPE*/
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #202020;
+    gap: 20px;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+
+footer .line-footer i {
+    color: white;
+    font-size: 22px;
+}
+
+
+.sobre .btn-rede-social {
+    color: black;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+
+footer .line-footer p, a {
+    color: white;
+}
+
+
+.borda {
+    border-top: 2px solid red;
+}
+
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width:1080px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    /*cabeçalho*/
+
+
+    section .topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section .topo-do-site {
+        padding: 20px 8%;
+    }
+
+
+    section.topo-do-site video {
+        width: 100%;
+    }
+
+    footer .flex {
+        flex-direction: column;
+    }
+
+    footer .line-foo
+    ter {
+        text-align: center;
+    }
+}
