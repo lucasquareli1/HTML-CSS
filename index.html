@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <!--BOOTSTRAP ICONES-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--BOOTSTRAP ICONES-->
+
+
+    <!--SUPORTE LINK COM JS-->
+    <script src="slider.js" defer></script>
+    <!--SUPORTE LINK COM JS-->
+
+
     <!--SUPORTE LINK COM CSS-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="slider.css">
     <!--SUPORTE LINK COM CSS-->
 
 
@@ -18,49 +30,45 @@
     <!-- FONTE GOOGLE-->
 
 
-    <!--BOOTSTRAP ICONES-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--BOOTSTRAP ICONES-->
-
-
     <title>porsche</title>
+
+    
 </head>
-
-
 <body>
-    <!--LOGO DO SITE (IMAGE) INTERFACE PARA O CSS-->
     <header
-     <div class="interface">
-        <div class="logo">
-            <a href="#">
-                <img src="images/Porsche-Logo.png" alt="logo da agencia">
-            </a>
-        </div>
+        <div class="interface">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/Porsche-Logo.png" alt="logo da agencia">
+                </a><!--images-->
+            </div><!--logo-->
 
 
-        <!--MENU E CABEÇALHO DO SITE-->
-        <nav class="menu-desktop">
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">História</a></li>
-                <li><a href="#">Modelos</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
+            <!--MENU E CABEÇALHO DO SITE-->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#Início">Início</a></li>
+                    <li><a href="#História">História</a></li>
+                    <li><a href="#Modelos">Modelos</a></li>
+                    <li><a href="#Sobre">Sobre</a></li>
+                </ul><!-- tags-->
+            </nav><!--menudesktop-->
 
 
-        <!--BOTAO PARA CONTATO-->
-        <div class="btn-Contato">
-            <a href="#">
-                <button>Contato</button>
-            </a>
-        </div>
-        </div>
-    </header>
+
+            <!--BOTAO PARA CONTATO-->
+            <div class="btn-Contato">
+                <a href="#">
+                    <button>Contato</button>
+                </a><!--botao-->
+            </div><!--btn contatos-->
+        </div><!--interface-->
+    </header><!--header-->
+
 
     <!--PAGINA PRINCIPAL-->
     <main>
-        <section class="topo-do-site">
+        <section id="Início" class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <!-- Adicione esta tag de vídeo -->
@@ -75,7 +83,7 @@
 
 
         <!--BOX  E ICONES BOOTSTRAP-->
-        <section class="MODELOS">
+        <section id="História"  class="MODELOS">
             <div class="interface">
                 <h2 class="titulo"><span>HISTÓRIA</span></h2>
                 <div class="flex">
@@ -113,7 +121,7 @@
                             proporciona um equilíbrio
                             notável entre desempenho dinâmico e eficiência, mantendo-se fiel à herança esportiva da
                             Porsche.</p>
-                    </div>
+                    </div><!--modelos box-->
 
 
                     <!--BOX  E ICONES BOOTSTRAP 3-->
@@ -130,32 +138,48 @@
                             energia, proporcionando uma experiência de condução
                             sustentável e ambientalmente amigável, sem comprometer o desempenho emocionante esperado de
                             um carro esportivo Porsche.</p>
+                    </div><!--modelos box-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--modelos-->
+
+
+        <section>
+            <div class="container-slider">
+                <button id="prev-button"><img src="slide/arrow.png" alt="prev-button"></button>
+                    <div class="container-images">
+                        <img src="slide/325c2415b031453284575fc442b5f2b5_1653675190964-1 (1).jpeg" alt="girl" class="slider on">
+                        <img src="slide/Captura de tela 2024-02-29 100502.png" alt="girl" class="slider">
+                        <img src="slide/Captura de tela 2024-02-29 100642.png" alt="girl" class="slider">
+                        <img src="slide/Captura de tela 2024-02-29 100722 (1) (1).png" alt="girl" class="slider">
+                        <img src="slide/FO5HUP6VEAEQ0OG.jpg" alt="girl" class="slider">
+                        <img src="slide/Porsche_Carrera_GT_-_Goodwood_Breakfast_Club_(July_2008).jpg" alt="girl" class="slider">
                     </div>
-                </div>
+                <button id="next-button"><img src="slide/arrow.png" alt="next-button"></button>
             </div>
         </section>
 
 
-        <section class="portfolio">
+        <section id="Modelos" class="portfolio">
             <div class="interface">
                 <h2 class="titulo"><span>MODELOS</span></h2>
                 <div class="flex">
                     <div class="img-port" style="background-image: url(images/wp5057583.webp);">
                         <div class="overlay">Porsche GT3 RS</div>
-                    </div>
+                    </div><!--imagem-->
                     <div class="img-port" style="background-image: url(images/Porsche-Panamera-2024.webp);">
                         <div class="overlay">Porsche Panamera</div>
-                    </div>
+                    </div><!--imagem-->
                     <div class="img-port" style="background-image: url(images/988848.jpg);">
                         <div class="overlay">Porsche Taycan</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </div><!--imagem-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portifolio-->
 
 
         <!--SOBRE-->
-        <section class="sobre">
+        <section id="Sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
@@ -176,8 +200,7 @@
                             de
                             competição e está incorporado em cada um de nossos carros. Chamamos a isso de “Inteligência
                             de
-                            Performance”.
-                        </p>
+                            Performance”.</p>
                         <div class="btn-rede-social">
                             <a href="https://www.facebook.com/porsche/"><button></button><i
                                     class="bi bi-facebook"></i></a><!--links rede social-->
@@ -207,7 +230,7 @@
                 </form><!--caixas de texto do contato-->
             </div> <!-- interface-->
         </section><!--section do formulario-->
-    </main>
+    </main><!--pagina principal-->
 
 
     <!--RODAPE-->
@@ -217,7 +240,7 @@
                 <div class="flex">
                     <div class="logo-footer">
                         <img src="images/dawdawdawd (1).png">
-                    </div>
+                    </div><!--logo footer-->
 
 
                     <div class="btn-rede-social">
@@ -239,13 +262,11 @@
                         Para mais informações sobre os produtos disponíveis no Brasil entre em contato com o Porsche
                         Center de sua preferência.</p>
                     <p><i class="bi bi-envelope-fill"></i>
-                        <a href="mailto: porschebr@gmail.com.br">porschebr@gmail.com.br</a>
-                    </p>
-                    <P>Região / Idioma Atual / Pt-Br</P>
+                        <a href="mailto: porschebr@gmail.com.br">porschebr@gmail.com.br</a></p>
+                    <P>Região / Idioma Atual / Pt-Br</P><!--portugues-->
                 </div> <!--div line footer-->
-            </div>
+            </div><!--line footer-->
         </div><!--interface-->
-    </footer>
-</body>
-
-</html> 
+    </footer><!--footer-->
+</body><!--corpo do site-->
+</html>

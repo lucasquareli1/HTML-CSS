@@ -13,10 +13,9 @@
 }
 
 
-
 /* CORES DO SITE*/
 body {
-    background-color: #252525;
+    background-color: #1f2838;
     height: 100vh;
 }
 
@@ -47,7 +46,6 @@ h2.titulo {
     color: white;
     font-size: 40px;
     text-align: center;
-
 }
 
 
@@ -55,39 +53,38 @@ h2.titulo {
     transform: scale(1.05);
     box-shadow: 0 0 20px white;
 }
+
+
 .MODELOS-box i{
-        background-color: white;
-        border-radius: 50%;
-        padding: 8px;
-        font-size: 10px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 10px;
 }
+
 
 /* ESTILO DO CABEÇALHO INTERFACE= CLASSE MAE */
 header {
-
     padding: 20px 4%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: grey;
+    background-color: rgb(0, 68, 255);
     opacity: .8;
     z-index: 1000;
     background-position: center;
     background-size: cover;
-
 }
 
 header {
     width: 100%;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.226);
     opacity: .8;
     z-index: 1000;
     left: 0;
     top: 0;
     position: fixed absolute;
-
-
 }
 
 
@@ -99,7 +96,7 @@ header a {
 
 
 header a:hover {
-    color: black;
+    color: rgba(255, 255, 255, 0.842);
     transform: scale(1.20);
     transition: .2s;
 }
@@ -125,16 +122,15 @@ button:hover, form .btn-enviar input:hover {
 
 
 /*TOPO DO SITE CONFIG*/
-
 section .topo-do-site {
     padding: 200px 4% 0;
 }
+
 
 section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
 }
-
 
 
 section.topo-do-site video {
@@ -155,13 +151,14 @@ section.topo-do-site video {
 
 
 @keyframes flutuar {
-    0% {
-        top: 0;
-    }
+0% {
+    top: 0;
+}
 
-    100% {
-        top: 30px;
-    }
+
+100% {
+    top: 30px;
+}
 }
 
 
@@ -220,12 +217,13 @@ section .sobre {
     border-radius: 10px;
 }
 
+
 section.sobre .btn-rede-social i {
     color: white;
     font-size: 22px;
     margin-top: 10px;
-
 }
+
 
 section.sobre .flex {
     align-items: center;
@@ -246,18 +244,16 @@ section.sobre .flex {
 }
 
 
-
-
-/* CENTRALIZACAO E ROLAGEM DA IMAGEM PORSCHE------- ---------------------------------------------------------------------------------------*/
+/* CENTRALIZACAO E ROLAGEM DA IMAGEM PORSCHE*/
 section.portfolio {
     padding: 100px 4%;
 }
+
 
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 70px;
 }
-
 
 
 .img-port {
@@ -299,10 +295,10 @@ section.portfolio .flex {
     opacity: 1;
 }
 
+
 /* VOCE PODE CRIAR UMA SESSAO GLOBAL E UTILIZAR ESSA MARGEM E PADDING NO SITE TODO*/
 section.formulario {
     padding: 90px 4%;
-
 }
 
 
@@ -314,6 +310,7 @@ form {
     flex-direction: column;
     gap: 20px;
 }
+
 
 form input {
     width: 100%;
@@ -351,9 +348,11 @@ form .btn-enviar input {
 /* ESTILO DO RODAPE*/
 footer {
     padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #202020;
+    box-shadow: 0 0 40px 10px #424242;
     gap: 20px;
+    background-color: rgba(128, 128, 128, 0.24);
 }
+
 
 footer .flex {
     justify-content: space-between;
@@ -367,7 +366,7 @@ footer .line-footer i {
 
 
 .sobre .btn-rede-social {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 22px;
     margin-top: 10px;
 }
@@ -385,32 +384,34 @@ footer .line-footer p, a {
 
 /*RESPONSIVIDADE*/
 @media screen and (max-width:1080px) {
-    .flex {
+.flex {
         flex-direction: column;
-    }
+}
+
 
     /*cabeçalho*/
+section .topo-do-site .flex {
+    gap: 40px;
+}
 
 
-    section .topo-do-site .flex {
-        gap: 40px;
-    }
-
-    section .topo-do-site {
-        padding: 20px 8%;
-    }
+section .topo-do-site {
+   padding: 20px 8%;
+}
 
 
-    section.topo-do-site video {
-        width: 100%;
-    }
 
-    footer .flex {
-        flex-direction: column;
-    }
+section.topo-do-site video {
+    width: 100%;
+}
 
-    footer .line-foo
-    ter {
-        text-align: center;
-    }
+
+footer .flex {
+    flex-direction: column;
+}
+
+
+footer .line-footer {
+    text-align: center;
+}
 }
