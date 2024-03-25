@@ -20,6 +20,8 @@
     <!--SUPORTE LINK COM CSS-->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="./formulario.css"  />
+
     <!--SUPORTE LINK COM CSS-->
 
 
@@ -34,6 +36,8 @@
 
     
 </head>
+
+
 <body>
     <header
         <div class="interface">
@@ -216,20 +220,64 @@
 
 
         <!--formulario para contato-->
-        <section class="formulario">
-            <div class="interface">
-                <h2 class="titulo">CONTATO</h2>
+    <div class="container">
+        <section class="header">
+          <h2>Nova conta</h2>
+        </section>
+
+                
+        <form id="form" class="form">
+            <div class="form-content">
+                <label for="username">Nome do usuário</label>
+                <input
+                type="text"
+                id="username"
+                placeholder="Digite o nome do usuario..."/>
+                <a>Aqui vai a mensagem de erro....</a>
+            </div>
 
 
-                <form action="texto">
-                    <input type="text" name="" id="" placeholder="Seu Nome:" required>
-                    <input type="text" name="" id="" placeholder="E-mail:" required>
-                    <input type="text" name="" id="" placeholder="Celular:(Opcional)">
-                    <input type="text" name="" id="" placeholder="Senha:" required>
-                    <div class="btn-enviar"><input type="submit" value="Enviar Contato"></div>
-                </form><!--caixas de texto do contato-->
-            </div> <!-- interface-->
-        </section><!--section do formulario-->
+            <div class="form-content">
+                <label for="email">Email</label>
+                <input
+                type="email"
+                id="email"
+                placeholder="Digite o seu email..."
+                />
+                <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+
+            <div class="form-content">
+                <label for="password">Senha</label>
+                <input
+                type="password"
+                id="password"
+                placeholder="Digite sua senha..."
+                />
+                <a>Aqui vai a mensagem de erro....</a>
+            </div>
+            
+
+            <div class="form-content">
+                <label for="password-confirmation">Confirmação de senha</label>
+                <input
+                    type="password"
+                    id="password-confirmation"
+                    placeholder="Digite sua senha novamente..."
+                />
+                <a>Aqui vai a mensagem de erro....</a>
+            </div>
+
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+  
+    
+  <script src="./script.js"></script>
+
+
     </main><!--pagina principal-->
 
 
@@ -269,4 +317,6 @@
         </div><!--interface-->
     </footer><!--footer-->
 </body><!--corpo do site-->
+
+
 </html>
